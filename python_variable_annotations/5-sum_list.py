@@ -3,7 +3,7 @@
 Module fournissant une fonction qui calcule la somme des valeurs d'une liste.
 """
 
-def sum_list(input_list: list) -> float:
+def sum_list(input_list: float) -> float:
     """
     Retourne la somme de tous les éléments numériques d'une liste.
     """
