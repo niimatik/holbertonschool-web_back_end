@@ -3,8 +3,7 @@
 Module contenant quelques variables simples utilisées comme exemples de types de base.
 """
 
-
-a = 1
-pi = 3.14
-i_understand_annotations = True
-school = "Holberton"
+a = 1            # Entier représentant une valeur numérique simple.
+pi = 3.14        # Nombre flottant approximant la constante π.
+i_understand_annotations = True  # Booléen indiquant la compréhension des annotations.
+school = "Holberton"  # Chaîne représentant le nom d'une école.
