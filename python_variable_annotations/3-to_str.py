@@ -3,6 +3,7 @@
 Module fournissant une fonction simple de troncature de nombre flottant.
 """
 
+
 def to_str(n: float) -> str:
     """
     Retourne un numero en string.
