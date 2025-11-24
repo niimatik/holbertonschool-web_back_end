@@ -8,5 +8,5 @@ def concat(str1: str, str2: str) -> str:
     """
     Concatène deux chaînes de caractères.
     """
-    concated = str1 + str2  # Concaténation simple des deux chaînes
+    concated = str1 + str2
     return concated
