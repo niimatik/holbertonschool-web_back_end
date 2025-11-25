@@ -3,8 +3,8 @@
 Module fournissant une fonction qui calcule la somme des valeurs d'une liste.
 """
 
-
 import typing
+
 
 def sum_list(input_list: typing.List[float]) -> float:
     """
