@@ -11,6 +11,6 @@ async def wait_random(max_delay: int = 10) -> float:
     """
     Retourne un délai aléatoire après l'avoir attendu de manière asynchrone.
     """
-    timer = random.uniform(0, max_delay)
+    timer: float = random.uniform(0, max_delay)
     await asyncio.sleep(timer)
     return timer
