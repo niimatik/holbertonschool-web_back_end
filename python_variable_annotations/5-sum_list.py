@@ -7,7 +7,5 @@ def sum_list(input_list: float) -> float:
     """
     Retourne la somme de tous les éléments numériques d'une liste.
     """
-    a = 0.0
-    for f in input_list:
-        a = a + f
+    a: float = sum(input_list)
     return a
