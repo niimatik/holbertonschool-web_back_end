@@ -6,7 +6,9 @@ chaque élément d’un iterable à sa longueur.
 import typing
 
 
-def element_length(lst: typing.Iterable[typing.Sequence]) -> typing.List[typing.Tuple[typing.Sequence, int]]:
+def element_length(
+        lst: typing.Iterable[typing.Sequence]
+        ) -> typing.List[typing.Tuple[typing.Sequence, int]]:
     """
     Retourne une liste de tuples contenant chaque élément et sa longueur.
     """
