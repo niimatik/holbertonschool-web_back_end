@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module fournissant une fonction qui crée un multiplicateur basé sur une valeur flottante.
+Module fournissant une fonction qui crée un multiplicateur basé sur un float.
 """
 import typing
 
