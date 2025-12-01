@@ -45,8 +45,8 @@ class Server:
         Retourne une portion du dataset correspondant
         à une page et une taille de page données.
         """
-        assert isinstance(page) == int and page < 1
-        assert isinstance(page_size) == int and page_size < 1
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
         start, end = index_range(page, page_size)
         data = self.dataset()
         return data[start:end]
