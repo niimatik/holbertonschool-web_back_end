@@ -13,5 +13,6 @@ def index_range(page: int, page_size: int) -> tuple:
     index = []
     start_index = (page - 1) * page_size
     end_index = start_index + page_size
-    index.append(start_index, end_index)
+    index.append(start_index)
+    index.append(end_index)
     return index
