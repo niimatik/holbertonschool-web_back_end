@@ -52,6 +52,10 @@ class Server:
         return data[start:end]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """
+        Retourne un dictionnaire contenant les informations de pagination
+        ainsi que les données associées à la page demandée.
+        """
         data = self.get_page(page, page_size)
         size = len(data)
         total_items = len(self.dataset())
