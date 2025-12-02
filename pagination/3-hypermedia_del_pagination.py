@@ -41,7 +41,10 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-
+        """
+        Retourne une structure décrivant une page de données basée sur un
+        index donné et tenant compte des éventuelles suppressions.
+        """
         assert isinstance(index, int) and index <= 0
         dataset = self.indexed_dataset()
         data = []
