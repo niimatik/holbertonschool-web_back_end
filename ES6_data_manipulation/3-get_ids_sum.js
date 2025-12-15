@@ -1,4 +1,4 @@
 export default function getStudentIdsSum(array) {
-  const sumarray = list.reduce((sum, array) => sum + array.id, 0);
+  const sumarray = array.reduce((sum, temparray) => sum + temparray.id, 0);
   return sumarray;
 }
