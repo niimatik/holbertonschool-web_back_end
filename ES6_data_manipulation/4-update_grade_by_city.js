@@ -1,7 +1,7 @@
 export default function updateStudentGradeByCity(studentlist, city, newgrades) {
   const locationarray = studentlist.filter(element => element.location === city);
   const updatearray = locationarray.map(element => {
-    const gradefound = newgrades.find(item => item.studentID === element.id)
+    const gradefound = newgrades.find(item => item.studentId === element.id)
     let grade
     if (gradefound) {
       grade = gradefound.grade
