@@ -10,7 +10,7 @@ export default function updateStudentGradeByCity(studentlist, city, newgrades) {
       grade = "N/A"
     };
     return {
-      ...studentID,
+      ...element,
       grade: grade
     }
   });
