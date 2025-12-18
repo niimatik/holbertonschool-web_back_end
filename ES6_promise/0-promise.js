@@ -1,5 +1,6 @@
+import { promise } from "nice-try";
 import { resolve } from "path";
 
 export default function getResponseFromAPI() {
-  const promise = new Promise(resolve, reject);
+  return promise.resolve();
 }
