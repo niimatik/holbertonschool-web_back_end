@@ -1,4 +1,4 @@
-function displayMessage (massage) {
-  console.log(massage);
+function displayMessage (message) {
+  console.log(message);
 }
 module.exports = displayMessage;
