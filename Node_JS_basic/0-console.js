@@ -1,4 +1,4 @@
-function displayMassage (massage) {
+function displayMessage (massage) {
   console.log(massage);
 }
-module.exports = displayMassage;
+module.exports = displayMessage;
