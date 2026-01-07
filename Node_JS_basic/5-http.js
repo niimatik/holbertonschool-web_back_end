@@ -23,15 +23,13 @@ function countStudents(path) {
       for (const field in fields) {
         if (Object.hasOwn(fields, field)) {
           const list = fields[field];
-          console.log(`Number of students in ${field}: ${list.length}. List: ${list.join(', ')}`);
+          output += `Number of students in ${field}: ${list.length}. List: ${list.join(', ')}\n`;
         }
       }
-      resolve(fields);
+      resolve(output.trim());
     });
   });
 }
-
-module.exports = countStudents;
 
 const http = require('http');
 
@@ -42,24 +40,24 @@ const app = http.createServer((req, res) => {
 
   if (method === 'GET' && url === '/') {
     res.statusCode = 200;
-    res.end('Hello Holberton School!')
+    res.end('Hello Holberton School!');
   }  else if (method === 'GET' && url === '/students') {
     res.statusCode = 200;
-    res.end('This is the list of our students');
+    res.write('This is the list of our students');
     const database = process.argv[2];
     countStudents(database)
       .then((output) => {
         res.end(output);
       })
       .catch((err) => {
-        res.end(err.message)
+        res.end(err.message);
       });
   } else {
     res.end();
   }
 });
 
-const PORT = 1245
+const PORT = 1245;
 
 app.listen(PORT, 'localhost', () => {
   console.log(`Server running at http://localhost:${PORT}/`);
